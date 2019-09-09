@@ -687,6 +687,168 @@ ul {
   padding: 10px 0 20px;
 }
 
+/**************** banner section css start ****************/
+.banner {
+  margin: 0;
+  margin-top: 160px;
+  padding: 0;
+  width: 100%;
+  min-height: 300px;
+  background-color: rgb(240, 239, 239);
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #666666;
+}
+
+.banner .heading {
+  margin: 0;
+  padding: 20px 80px;
+  font-weight: 600;
+  font-size: 35px;
+  text-align: center;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+}
+
+.banner nav {
+  display: inline-block;
+  background-color: transparent;
+  font-size: 15px;
+}
+
+.banner nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.banner nav li {
+  background-color: transparent;
+  list-style: none;
+}
+
+
+.banner nav li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.banner nav li.active a{
+  border-bottom: 1px solid #EE1E3F;
+  color: rgb(236, 158, 63);
+}
+
+.banner .box {
+  margin: 40px auto;
+  padding: 30px 0;
+  height: auto;
+  max-width: 600px;
+  /* background-color: rgb(218, 218, 218); */
+  /* background-color: rgba(236, 158, 63, 0.3); */
+  background-color: #fff;
+}
+
+.banner .box h4 {
+  font-size: 22px;
+  margin: 0;
+  padding: 10px;
+}
+
+.banner .box p {
+  font-size: 15px;
+  margin: 0;
+  padding: 0 50px;
+  padding-bottom: 10px;
+}
+
+.banner .box .select {
+  margin: 0;
+  padding: 30px 0;
+  width: 100%;
+  display: flex;
+}
+
+.banner .box .select .choose {
+  margin: 0;
+  padding: 10px;
+  width: 50%;
+}
+
+.banner .box .select .choose a {
+  margin: 0;
+  padding: 10px;
+  background-color: #EE1E3F;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  font-size: 15px;
+
+}
+
+.banner .box .select .choose p {
+  font-size: 14px;
+  margin: 0;
+  margin-top: 25px;
+  padding: 0 30px;
+  padding-bottom: 10px;
+}
+
+@media(max-width: 576px) {
+  .banner {
+    margin-top: 100px;
+  }
+  .banner .heading {
+    font-weight: 500;
+    font-size: 30px;
+    padding: 20px 10px;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  }
+  .banner nav ul {
+    display: block;
+  }
+  .banner nav li.active a{
+    border-bottom: none;
+  }
+  .banner .box {
+    margin: 30px auto;
+    padding: 20px 0;
+    width: 90%;
+  }
+  .banner .box h4 {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .banner .box p {
+    font-size: 14px;
+    padding: 0 30px;
+  }
+  .banner .box .select {
+    padding: 30px 0;
+    width: 100%;
+    display: block;
+  } 
+  .banner .box .select .choose {
+    padding: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+  }   
+  .banner .box .select .choose a {
+    padding: 10px 20px;
+    font-size: 15px;
+  
+  }
+  .banner .box .select .choose p {
+    font-size: 13px;
+    margin-top: 20px;
+    padding: 0 30px;
+    padding-bottom: 0px;
+  }  
+}
 
 /**************** banner part css start ****************/
 /* line 2, E:/161 Real estate/161_Real_state_html/sass/_banner.scss */
@@ -6248,6 +6410,7 @@ h6 {
   padding-left: 18px;
   font-size: 13px;
   background: transparent;
+  width: 95%;
 }
 
 /* line 61, E:/161 Real estate/161_Real_state_html/sass/_contact.scss */
