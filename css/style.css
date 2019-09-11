@@ -701,6 +701,9 @@ ul {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   color: #666666;
+  background: linear-gradient(to right,rgba(0,0,0, 0.8) , rgba(0,0,0,0.8)), url('./../img/bg.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .banner .heading {
@@ -709,7 +712,8 @@ ul {
   font-weight: 600;
   font-size: 35px;
   text-align: center;
-  text-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  text-shadow: 0 3px 5px rgba(255, 255, 255, .2);
+  color: rgb(241, 241, 241);
 }
 
 .banner nav {
@@ -736,6 +740,11 @@ ul {
   padding: 0 20px;
   text-decoration: none;
   display: block;
+  color: rgb(179, 179, 179);
+}
+
+.banner nav li a:hover {
+  color: rgb(236, 158, 63);
 }
 
 .banner nav li.active a{
@@ -750,7 +759,7 @@ ul {
   max-width: 600px;
   /* background-color: rgb(218, 218, 218); */
   /* background-color: rgba(236, 158, 63, 0.3); */
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .banner .box h4 {
@@ -1734,9 +1743,9 @@ ul {
   padding-bottom: 50px;
 }
 
-.apartment_part .row {
+/* .apartment_part .row { */
   /* margin-bottom: 50px; */
-}
+/* } */
 
 @media (max-width: 576px) {
   /* line 2, E:/161 Real estate/161_Real_state_html/sass/_apartment.scss */
@@ -2068,7 +2077,7 @@ ul {
   width: 100%;
   font-size: 0;
   text-align: center;
-  background-color:  #ccc;
+  background-color:  rgb(47, 47, 47);
 }
 
 .slab2 .part {
@@ -2076,7 +2085,7 @@ ul {
   width: 25%;
   margin: 0;
   padding: 60px 10px;
-  background-color: #ccc;
+  /* background-color: #000; */
   font-size: medium;
 }
 
@@ -2090,10 +2099,12 @@ ul {
   margin: 0;
   padding: 15px 10px;
   font-size: 16px;
+  color: rgb(236, 158, 63);
 }
 .slab2 .part p {
   margin: 0;
-  font-size: 14px
+  font-size: 14px;
+  color: #fff;
 }
 
 @media(max-width: 767px) {
@@ -3216,6 +3227,9 @@ ul {
 
 .contact-section  {
   padding: 15px;
+  background: linear-gradient(to right, rgba(255,255,255,.8), rgba(255,255,255,.8)), url('./../img/contact.jpeg');
+  background-position: center;
+  background-size: cover;
 }
 
 
@@ -3451,6 +3465,163 @@ ul {
   margin-bottom: 30px;
   font-size: 24px;
 }
+
+/* Footer section starts here */
+footer {
+  margin: 0;
+  padding: 50px 0 20px;
+  width: 100%;
+  background-color: #000;
+}
+
+footer .contain {
+  margin: 0;
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+}
+
+footer .contain .sec{
+  margin: 0;
+  padding: 20px;
+  width: 25%;
+  /* background-color: yellow; */
+  /* border: 1px solid yellow; */
+}
+
+footer .contain .sec h2{
+  margin: 0;
+  padding: 10px;
+  font-size: 22px;
+  color: rgb(236, 158, 63);
+  font-weight: 700;
+}
+
+
+footer .contain .sec .links {
+  margin: 0;
+  padding: 10px;
+}
+
+footer .contain .sec .links li {
+  padding: 5px;
+}
+
+footer .contain .sec .links li a{
+  font-size: 18px;
+  color: #fff;
+}
+
+footer .contain .sec .links li a:hover {
+  color: #EE1E3F;
+}
+
+footer .contain .contact p{
+  margin: 0;
+  padding: 5px 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+footer .contain .contact p.ads {
+  margin-left: 35px;
+}
+
+footer .contain .contact p:hover {
+  color: #EE1E3F;
+}
+
+footer .contain .contact p .thick {
+  font-weight: 500;
+}
+
+footer .contain .contact p .thick .big {
+  font-size: 30px;
+  padding: 5px;
+  color: #EE1E3F;
+}
+
+footer .contain .follow ul {
+  margin: 15px 0;
+  padding: 5px;
+  display: flex;
+}
+
+footer .contain .follow ul li{
+  text-align: center;
+  margin: 5px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: rgb(236, 158, 63);
+  border-radius: 5px;
+  transition: .5s;
+}
+
+footer .contain .follow ul li a{
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+
+footer .contain .follow ul li:hover a {
+  /* color: #fff !important; */
+  color: rgb(236, 158, 63);  
+}
+
+footer .contain .follow ul li:hover{
+  background-color: #EE1E3F;
+  border-radius: 50%;
+}
+
+footer .copyright {
+  margin: 0;
+  padding: 5px 20px 0 20px;
+  font-size: 16px;
+  color: #fff;
+}
+
+footer .copyright .red {
+  color: #EE1E3F;
+}
+
+footer .contain .sec .underline {
+  height: 2px;
+  margin-left: 10px;
+  width: 100px;
+  /* background-color: #EE1E3F; */
+  background: linear-gradient(to right,rgb(238, 30, 65),rgb(236, 158, 63));
+  padding: 0;
+}
+
+footer img {
+  width: 200px;
+  padding: 5px 20px;
+}
+
+@media (max-width: 576px) {
+  footer {
+    padding: 10px;
+  }
+  footer .contain {
+    margin: 0;
+    padding: 20px 0;
+    display: block;
+  }
+  footer .contain .sec{
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+  }
+  footer .copyright {
+    padding: 5px 10px 0 10px;
+  }
+  
+}
+
+/* Footer section ends here */
+
 
 /* line 85, E:/161 Real estate/161_Real_state_html/sass/_elements.scss */
 b,
@@ -4898,7 +5069,7 @@ h6 {
 .single-blog .tag {
   text-align: left;
   display: inline-block;
-  float: left;
+  /* float: left; */
   font-size: 13px;
   font-weight: 300;
   margin-right: 22px;
@@ -6404,13 +6575,24 @@ h6 {
 
 /* line 53, E:/161 Real estate/161_Real_state_html/sass/_contact.scss */
 .form-contact .form-control {
-  border: 1px solid #f0e9ff;
+  border: 1px solid rgb(59, 59, 59);
   border-radius: 5px;
   height: 48px;
   padding-left: 18px;
   font-size: 13px;
   background: transparent;
   width: 95%;
+  margin: 0 auto;
+}
+
+.form-contact .form-control.special {
+  width: 90%;
+}
+
+@media(max-width: 576px) {
+  .form-contact .form-control.special {
+    width: 95%;
+  } 
 }
 
 /* line 61, E:/161 Real estate/161_Real_state_html/sass/_contact.scss */
